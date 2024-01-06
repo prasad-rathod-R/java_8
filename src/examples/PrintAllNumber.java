@@ -29,15 +29,26 @@ public class PrintAllNumber {
 
 		int result = newFunctionalApprochUsingLambda(num);
 		System.out.println(result);
+  
+		int result2 = newFunctionalApprochUsingBuiltInIntegerMethod(num);
+		System.out.println(result2);
+		
+		int sumOfSqquareUsingFun = sumOfSqquareUsingFun(num);
+		System.out.println(sumOfSqquareUsingFun);
+
+
 	}
 
 	// how to iterate means follows how to solve the problem
+	// below code will print all the number in list this is bfore java 8
 	private static void printAllNumber(List<Integer> numbers) {
 		for (int number : numbers) {
 			System.out.println("old method" + number);
 		}
 	}
 
+	// printing the even number using old method if we divide the number by two and
+	// op is zero then thats even number
 	private static void printEven(List<Integer> numbers) {
 		for (int number : numbers) {
 			if (number % 2 == 0) {
@@ -131,10 +142,16 @@ public class PrintAllNumber {
 	}
 
 	/*
-	 * approch 3 using built in sum function
+	 * approch 3 using built in sum function it will calculate all the sum of
+	 * element in list
 	 */
 
 	private static int newFunctionalApprochUsingBuiltInIntegerMethod(List<Integer> sum) {
 		return sum.stream().reduce(0, Integer::sum);
+	}
+	
+	private static int sumOfSqquareUsingFun(List<Integer> squareSum) {
+		
+		return squareSum.stream().map(x->x*x).reduce(0, Integer::sum);
 	}
 }
