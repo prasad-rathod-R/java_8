@@ -1,0 +1,31 @@
+java - 8 
+
+features - 
+functional style of code is introduced with lambda function
+
+functional interface added - @FunctionalInterface
+
+default method 
+
+method reference added 
+
+and base 64 encryotion
+
+------------------------------------------------------------------------------------------
+stream api
+It allows you to express complex data manipulations in a more concise and readable way.
+Streams provide a functional approach to processing collections, allowing you to perform various operations such as filtering, mapping, and reducing
+
+------------------------------------------------------------------------------------------
+
+New Date and Time API
+
+and optional keyword has bedn introduced in java 8 it helps to ha dles the null check 
+
+New Collectors:The Collectors class introduced new utility methods to facilitate the accumulation of elements into collections.
+This includes methods for grouping, partitioning, and more.
+
+Nashorn JavaScript Engine
+
+
+
