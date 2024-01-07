@@ -96,6 +96,7 @@ public class CustomClass {
 				System.out.println(courses.stream().noneMatch(reviewScoreLessThan90Predicate));
 								
 				System.out.println(courses.stream().anyMatch(reviewScoreGreaterThan95Predicate));
+
 	}
 
 }

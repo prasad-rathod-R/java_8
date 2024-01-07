@@ -1,0 +1,9 @@
+spring cloud open feign - microservice communicate using http protocol 
+
+spring cloud netflix eureka - we can have thousands of microservices , microservices are communicating each other and if we have change in url then it will be big problem then we need to change url in all the microservices 
+
+spring cloud eureka server(service registry and service discovery) - each and every microservice register itself with eureka and it will be having unique id.it will communicate using name 
+
+spring cloud load balacer - say it like student microservice calling address microservices then we can have multiple instace for our microservice
+
+spring cloud api gateway - whatever request is coming first it goes to api gateway

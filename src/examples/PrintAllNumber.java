@@ -60,7 +60,9 @@ public class PrintAllNumber {
 
 	// using java 8 its follows what to do
 	private static void printAllNumnberUsingJava(List<Integer> numbers) {
-		numbers.stream().forEach(System.out::println);
+		numbers.
+		stream().
+		forEach(System.out::println);
 
 	}
 	/*
@@ -74,7 +76,10 @@ public class PrintAllNumber {
 
 	// using functional approch
 	private static void printAllNumnberUsingJavaFunctionalApproch(List<Integer> numbers) {
-		numbers.stream().filter(PrintAllNumber::evenNumFunction).forEach(System.out::println);
+		numbers.
+		stream().
+		filter(PrintAllNumber::evenNumFunction).
+		forEach(System.out::println);
 	}
 
 	/*
@@ -82,33 +87,62 @@ public class PrintAllNumber {
 	 */
 
 	private static void usinglambda(List<Integer> numbers) {
-		numbers.stream().filter(number -> number % 2 == 0)// lambda expression
-				.forEach(System.out::println);// method reference
+		numbers.
+		stream().
+		filter(number -> number % 2 == 0)// lambda expression
+        .forEach(System.out::println);// method reference
 	}
 
 	private static void oddNumberlambda(List<Integer> numbers) {
-		numbers.stream().filter(number -> number % 2 != 0)// lambda expression
+		numbers.
+		stream().
+		filter(number -> number % 2 != 0)// lambda expression
 				.forEach(System.out::println);// method reference
 	}
 
 	private static void printAllCoursesList(List<String> cources) {
-		cources.stream().forEach(System.out::println);
+		cources.
+		stream().
+		forEach(System.out::println);
 
-		cources.stream().filter(containCourse -> containCourse.contains("Spring")).forEach(System.out::println);
+		cources.
+		stream().
+		filter(containCourse -> containCourse.
+				contains("Spring")).
+		forEach(System.out::println);
 
-		cources.stream().filter(containCourse -> containCourse.length() >= 4).forEach(System.out::println);
+		cources.
+		stream().
+		filter(containCourse -> containCourse.
+				length() >= 4).
+		forEach(System.
+				out::println);
 
-		cources.stream().map(cource -> cource + " " + cource.length()).forEach(System.out::println);
+		cources.
+		stream().
+		map(cource -> cource + " " + cource.
+				length()).
+		forEach(System.
+				out::println);
 
 	}
 
 	private static void printSquaresOfEvenNumbers(List<Integer> squearnum) {
-		squearnum.stream().filter(num -> num % 2 == 0).map(numb -> numb * numb).forEach(System.out::println);
+		squearnum.
+		stream().
+		filter(num -> num % 2 == 0).
+		map(numb -> numb * numb).
+		forEach(System.
+				out::println);
 	}
 
 	private static void cubeOfOddNumbers(List<Integer> cubernum) {
-		cubernum.stream().filter(cubnum -> cubnum % 2 != 0).map(cubnumber -> cubnumber * cubnumber * cubnumber)
-				.forEach(System.out::println);
+		cubernum.
+		stream().
+		filter(cubnum -> cubnum % 2 != 0).
+		map(cubnumber -> cubnumber * cubnumber * cubnumber)
+				.forEach(System.
+						out::println);
 	}
 
 	/* sum of number n list */
